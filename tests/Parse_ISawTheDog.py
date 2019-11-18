@@ -15,8 +15,10 @@ parser = LanguageParser(sim, "nest")
 
 parser.parseSentence("I saw the dog")
 
+parser.narc.apply()
+
 sim.run(200)
 
-parser.rbs.printSpikes()
+parser.narc.printSpikes()
 
 sim.end()
